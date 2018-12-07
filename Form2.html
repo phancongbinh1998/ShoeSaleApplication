@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!--
+<html>
+    <head>
+        <title>Let's Start</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+-->
+<html>
+    <head>
+        <title>Let's Start</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>
+	function check() {
+		var count = 0;
+		var s1 = document.getElementById("pass");
+		x1 = s1.value;
+		var s2 = document.getElementById("input_1");
+		x2 = s2.value;
+		var s3 = document.getElementById("fname");
+		x3 = s3.value;
+		var s4 = document.getElementById("lname");
+		x4 = s4.value;
+		var mau1 = /[a-z]/;
+		var mau2 = /[A-Z]/;
+		var mau3 = /[0-9]/;
+		var mau4 = /\W/;
+		var mau5 = /^[a-zA-Z]+([ ][a-zA-Z]+)*$/;
+		var mau = /^\w+[@][a-zA-Z]+[.][a-zA-Z]+([.][a-zA-Z]+)?$/;
+		if (mau.test(x2) == false) {
+			alert("Invalid email");
+			count ++;
+		}
+		if (mau1.test(x1)==false || mau2.test(x1)==false || mau3.test(x1)==false || mau4.test(x1)==false || x1.length < 6) {
+			alert("Invalid password"); 
+			count ++;
+		}
+		if (mau5.test(x3) == false) {
+			alert("Invalid first name");
+			count ++;
+		}
+		if (mau5.test(x4) == false) {
+			alert("Invalid last name");
+			count ++;
+		}
+		if (count == 0) 
+			alert("Create account successfully!!! Click  'Sign in' to continue");
+	}
+	   
+	</script>
+   
+    </head>
+    <body>
+        <section id="form_1" class="form_format_2">
+            <div class="layer_black"></div>
+            <div id="form_format" class="form_format_2">
+                <div id="form_body">
+                    <div id="x_button" onclick="hide_form()">X</div>
+                    <div id="logo_nike"><img src="./img/1.jpg"></div>
+                    <div id="name_form">
+                        <p>YOUR ACCOUNT FOR<br>EVERYTHING NIKE</p>
+                    </div>
+                    <div id="term_div">
+                        <p class="class_aligh_center">Nike at your service, providing access to ultimate gear,<br>expert guidance, incredible experiences, and endless<br>motivation.</p>
+                    </div>
+                    <div id="button_div" class="button_div_top_degree" >
+                        <div id="fb_button" onClick="goFb()">
+                            <i class="fa fa-facebook" aria-hidden="true"></i><p>REGISTER WITH FACEBOOK</p>
+                        </div>
+                    </div>
+                    <div id="line_space">
+                        <span></span><p>OR</p><span></span>
+                    </div>
+                    <input id="input_1" class="input_text" type="text" placeholder="Email">
+                    <input id="pass" class="input_text" type="password" placeholder="Password">
+                    <input id="fname" class="input_text" type="text" placeholder="First Name">
+                    <input id="lname" class="input_text" type="text" placeholder="Last Name">
+                    <input id="" class="input_text" type="text" placeholder="Date of Birth" type="text" onfocus="(this.type='date')">
+                    <input id="" class="input_text" list="list" name="list" placeholder="United States">
+                    <datalist id="list">
+                        <option value="Afghanistan">
+                        <option value="Armenia">
+                        <option value="Azerbaijan">
+                        <option value="Brunei">
+                        <option value="Campuchia">
+                        <option value="Afghanistan">
+                        <option value="Armenia">
+                        <option value="Azerbaijan">
+                        <option value="Brunei">
+                        <option value="Campuchia">
+                        <option value="Afghanistan">
+                        <option value="Armenia">
+                        <option value="Azerbaijan">
+                        <option value="Brunei">
+                        <option value="Campuchia">
+                    </datalist>
+                    <div id="male_female">
+                        <div id="male_female_1" class="input_text_male_female" onclick="changeMode(1,2)">Male</div>
+                        <div id="male_female_2" class="input_text_male_female" onclick="changeMode(2,1)">Female</div>
+                    </div>
+                    <div id="checkbox_div" class="class_aligh_center">
+                        <input type="checkbox" class="class_margin_left_50px"><p>Sign up for emails to hear all the latest from Nike.</p>
+                    </div>
+                    <div id="term_div">
+                        <p>By logging in, you agree to Nike's</p><p class="class_underline">Privacy Policy</p><p> and </p><p class="class_underline">Terms of Use</p>
+                    </div>
+                    <div id="button_div">
+                        <div id="create_acc" onClick="check()">
+                            <p>CREATE ACCOUNT</p>
+                        </div>
+                    </div>
+                    <div id="form_footer" class="class_bottom_degree">
+                        <p class="class_opacity">Already a member?</p><p class="class_underline"><a href="Form1.html">Sign in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function show_form() {
+                document.getElementById("form_1").setAttribute("style","opacity: 1;");
+            }
+            function hide_form() {
+                document.getElementById("form_1").setAttribute("style","opacity: 0;");
+            }
+            function changeMode(temp1,temp2) {
+                var id_1 = "male_female_" + temp1;
+                var id_2 = "male_female_" + temp2;
+                document.getElementById(id_1).setAttribute("style","background-color: gray;color: white;");
+                document.getElementById(id_2).setAttribute("style","background-color: white;");
+            }
+			function goFb() {
+				window.open("https://www.facebook.com");
+			}
+        </script>
+    </body>
+</html>

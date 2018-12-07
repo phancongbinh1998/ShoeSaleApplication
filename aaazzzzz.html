@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NIKE AIR FOAMPOSITE PRO</title>
+<script src="addCart.js"></script>
+
+<script>
+	var flag = 0;
+    var pos = 0;
+    var cur = 0;
+	var vitrigiay = 0;
+    function hinh(pos,cur) {				
+    var list = document.getElementById("con1");
+    var arr = list.getElementsByTagName("img");
+    for (var i = 0; i < arr.length; i ++) {
+    arr[i].style.border = "none";}
+   	arr[cur].style.border = "3px solid #ddd";
+	diChuyen(0);
+	diChuyen(pos);}
+
+    function diChuyen(pos) {
+       var div = document.getElementById("chau2");
+       div.style.transform = "translateX(" + pos + "px)";}
+	   
+	function chuyenGiay(vitrigiay, pos) {
+		var list = document.getElementById("divgiay");
+    	var arr = list.getElementsByTagName("img");
+		var div = document.getElementById("chau1");
+    	for (var i = 0; i < arr.length; i ++) {
+    	arr[i].style.border = "none";}
+		arr[vitrigiay].style.border = "3px solid #ddd";
+		//div.style.transform = "translateY("0"px);
+		div.style.transform = "translateY(" + pos + "px)";
+		
+		if (vitrigiay == 0) {
+			document.getElementById("tengiay").innerHTML = "Metallic Red/Black/White/Black";
+			document.getElementById("style").innerHTML = "Style: 624041-701";
+			document.getElementById("hinhBenefits").src = "img/NIKE AIR FOAMPOSITE PRO - men/red/1.jpg";
+			diChuyen(0);
+		}
+		else {
+			document.getElementById("tengiay").innerHTML = "Metallic Gold/Black/White/Black";
+			document.getElementById("style").innerHTML = "Style: 624041-702";
+			document.getElementById("hinhBenefits").src = "img/NIKE AIR FOAMPOSITE PRO - men/gold/1.jpg";
+			diChuyen(0);
+			diChuyen(-3720);
+		}
+	}
+	
+	
+	function chonSize() {
+		
+			if (flag == 0) {
+				document.getElementById("sizeEU").style.zIndex = 3;
+				document.getElementById("chonsize").style.color = "#FA5400";
+				document.getElementById("hidden").style.zIndex = 1;
+				document.getElementById("duongke2").style.zIndex = 2;
+				document.getElementById("delivery").style.zIndex = 2;
+				flag ++;
+				
+			}
+			else {
+				document.getElementById("sizeEU").style.zIndex = 1;
+				document.getElementById("chonsize").style.color = "dimgray";
+				document.getElementById("hidden").style.zIndex = 2;
+				document.getElementById("duongke2").style.zIndex = 3;
+				document.getElementById("delivery").style.zIndex = 3;
+				flag--;
+			}
+		}
+	
+	function laySize(x) {
+		var size = document.getElementById(x.id).innerHTML;
+		document.getElementById("sizegiay").innerHTML = size;
+	}
+	
+            
+</script>
+
+<style>
+	#ong {width: 100%; height: 620px; box-sizing: border-box; }
+	
+	#cha1 {width: 700px; height: 620px; padding-left: 130px; box-sizing: content-box; float: left;}
+	#con1 {width: 80px; height: 360px; float: left; overflow: hidden;}
+	#chau1 {width: 80px; height: 720x; }
+	#con1 img { width: 60px; height: 60px; box-sizing: border-box; float: left;}
+	
+	#con2 {width: 620px; height: 620px; overflow: hidden; float: left;}
+	#chau2 {width: 7440px; height: 620px;}
+	#chau2 img {width: 620px; height: 620px; float: left;}
+	
+	
+	#cha2 {width: 380px; height: 620px; float: left;  padding-left: 20px; box-sizing: border-box; overflow: hidden;}
+	#cha2 h1 {margin-top: 0px; font-size: 30px; padding-bottom: 0px;  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; color: #333;}
+	#cha2 h2 {position: relative; top: -20px;  font-size: 15px; color: gray; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; font-style: oblique; }
+	#cha2 img {width: 60px; height: 60px; box-sizing: border-box;}
+	#tien { float: left; position: relative; top: -25px; font-weight: bolder; font-size: 20px;}
+	#tengiay {font-size: 12px; color: dimgrey; float: left;}
+	#duongke { width: 100%; height: 15px; border-bottom: 0.25px solid #ddd; position: relative; bottom: 3px; font-family:  Helvetica; }
+	#style {font-size: 12px; color: dimgrey; float: right; font-family:  Helvetica;}
+	#cha2 img {float: left; box-sizing: border-box; }
+	#hinhgiay1 {border: 3px solid #ddd;}
+	#divgiay {width: 100%; height: 60px; float: left; padding-top: 10px;}
+	
+	#sizechart {float: left; padding-top: 10px; font-size: 15px; color: dimgrey; }
+	
+	#chonsize {background-color: #DDDDDD; width: 178px; height: 40px; float: left; text-align: center; margin-top: 30px; margin-left: -64px; padding-top: 11px; box-sizing: border-box; border-top-left-radius: 5px; border-radius: 2px; color: dimgray; position: relative; top: 10px; font-weight: bold; font-family:  Helvetica;}
+	
+	#sizeEU {float: left; width: 300px; height: 110px; background-color: #DDDDDD; margin-top: -15px; margin-left: -1px; padding-left: 8px; box-sizing: border-box; padding-top: 6px; z-index: 1; position: relative; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; font-family:  Helvetica;}
+	
+	#cha2 li {list-style-type: none; background-color: white; float: left; width:  140px; height: 30px; text-align: center; margin: 1px; padding-top: 6px; box-sizing: border-box; font-size: 15px; font-weight: bolder; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; border-radius: 2px;}
+	
+	#add {background-color: #FA5400; float: left; width: 178px; height: 40px; margin-left: 4px; margin-top: 40px; border-radius: 2px; text-align: center; padding-top: 12px; box-sizing: border-box; font-size: 15px; font-weight:  bolder; color: white; font-family:  Helvetica;}
+	
+	#duongke2 { width: 100%; height: 15px; border-bottom: 0.25px solid #ddd; position: relative; bottom: -180px; z-index: 3;}
+	
+	#delivery {float: left; margin-top: -60px; font-size: 12px; font-weight: bolder; position: relative; z-index: 3; font-family:  Helvetica;}
+	
+	#hidden {background-color: white; width: 300px; height: 110px; position: relative; z-index: 2; top: 133px; right: 1px;}
+	
+	#cha2 li:hover {background-color: #666666;}
+	.link:hover {cursor: pointer;}
+	
+	#duongke3 { width: 100%; height: 10px; float: left; margin-left: 130px; border-bottom: 0.25px solid #ddd; margin-top: 30px; margin-bottom: 30px;}
+	
+	#cha3 { width: 100%; height: 300px; float: left;}
+	#cha3 img {width: 300px; height: 300px; float: left; margin-left: 250px; margin-right: 30px;}
+	#cha3 p {float: left; width: 540px;}
+	#p1 {font-size: 40px; line-height: 1.1; letter-spacing: -1px; float: left; width: 540px; color: #333; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";}
+	#p2 {font-size: 12px; color: #666; width: 540px; height: 36px;  display: inline-block; font-family:  Helvetica;}
+	#p3 {font-size: 20px; letter-spacing: -1px; float: left; width: 540px; color: #333; margin-bottom: 20px; font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";}
+	#cha3 li {float: left; width: 540px; text-align: left; list-style-type: disc; font-size: 13px; color: #666; height: 18px; font-family:  Helvetica;}
+	#p4 {font-size: 15px; color: #666; font-family:  Helvetica;}
+</style>
+
+</head>
+
+<body onLoad="khoiTao()">
+	<div id="ong">
+		<div id="cha1">
+			<div id="con1">
+				<div id="chau1">
+				<img src="img/NIKE AIR FOAMPOSITE PRO - men/red/1.jpg" onmouseover="hinh(0,0)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/2.jpg" onmouseover="hinh(-620,1)" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/3.jpg" onmouseover="hinh(-1240,2)" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/4.jpg"
+                onmouseover="hinh(-1860,3)" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/5.jpg"
+                onmouseover="hinh(-2480,4)" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/6.jpg"
+                onmouseover="hinh(-3100,5)" />
+                
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/1.jpg" onmouseover="hinh(-3720,6)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/2.jpg" onmouseover="hinh(-4340,7)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/3.jpg" onmouseover="hinh(-4960,8)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/4.jpg" onmouseover="hinh(-5580,9)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/5.jpg" onmouseover="hinh(-6200,10)"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/6.jpg" onmouseover="hinh(-6820,11)"/>
+				</div>
+			</div>
+			<div id="con2">
+				<div id="chau2">
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/1.jpg" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/2.jpg" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/3.jpg" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/4.jpg" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/5.jpg" />
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/red/6.jpg" />
+                
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/1.jpg"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/2.jpg"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/3.jpg"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/4.jpg"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/5.jpg"/>
+                <img src="img/NIKE AIR FOAMPOSITE PRO - men/gold/6.jpg"/>
+            	</div>
+			</div>
+		</div>
+		<div id="cha2">
+			<h1 id="giay">NIKE AIR FOAMPOSITE PRO</h1>
+			<h2 id="type">MEN'S SHOE</h2>
+			<span id="tien">8000000</span>
+			<p id="duongke"></p>
+			<span id="tengiay">Metallic Red/Black/White/Black</span>
+			<span id="style">Style: 624041-701</span>
+			<div id="divgiay">
+			<img class="link" id="hinhgiay1" src="img/NIKE AIR FOAMPOSITE PRO - men/red/1.jpg" onClick="chuyenGiay(0,0)" />
+			<img class="link" id="hinhgiay2" src="img/NIKE AIR FOAMPOSITE PRO - men/gold/1.jpg" onClick="chuyenGiay(1,-360)" />
+			</div>
+			<span id="sizechart">Size Chart</span>
+			<p class="link" id="chonsize" onClick="chonSize()"><span id="sizegiay" o="o">SIZE&nbsp;&nbsp; </span><span> &#9660;</span> </p>
+			<p class="link" id="add" onClick="add()">ADD TO CART</p>
+		  <div class="link" id="sizeEU">
+				<li id="l1" onClick="laySize(this)">EU 40</li>
+				<li id="l2" onClick="laySize(this)">EU 41</li>
+				<li id="l3" onClick="laySize(this)">EU 42</li>
+				<li id="l4" onClick="laySize(this)">EU 42.5</li>
+				<li id="l5" onClick="laySize(this)">EU 43</li>
+				<li id="l6" onClick="laySize(this)">EU 44</li>
+			</div>
+			<p id="duongke2"></p>
+			<p id="delivery">FREE DELIVERY Applies to orders of 5.000.000₫ or more. Returns are free for Nike+ members.</p>
+			<p id="hidden"></p>
+		</div>
+		
+		<p id="duongke3"></p>
+		
+		<div id="cha3">
+			<img id="hinhBenefits" src="img/NIKE AIR FOAMPOSITE PRO - men/red/1.jpg" />
+			<b id="p1">THE ORIGINAL, REBORN.</b>
+			<p id="p2">First introduced in 1996, this classic was built for full-court performance and bold style with soft, lightweight cushioning and futuristic design detail. Today, the unique construction makes the Nike Air Foamposite Pro Men's Shoe as popular as the original.</p>
+			<b id="p3">BENEFITS</b>
+			<li>Synthetic upper with mesh at tongue and heel for breathability</li>
+			<li>Zoom Air cushioning is responsive and comfortable</li>
+			<li>Minimal stitch design for comfort and a streamlined look</li>
+			<li>Outsole with modified herringbone pattern for traction and durability</li>
+			<p id="p4">Country of Origin: China</p>
+		</div>
+	</div>
+</body>
+</html>

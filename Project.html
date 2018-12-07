@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project</title>
+<script src="addCart.js"></script>
+<style>
+#d{width:100%; height:110px;float:left; position:fixed;}
+#x{width:100%; height:110px;float:left;}
+#d1 {
+	width: 100%;
+	height: 35px;
+	float: left;
+	color: #666;
+	border:0.1px solid #E8E8E8;
+	background-color:white;
+}
+#d11 {width: 9%; height: 35px; border-right:0.1px solid #E8E8E8; float: left;}
+#d11 a{color: #666;}
+#d11 p{margin-top:10px;text-align: center;}
+#d11:hover {cursor:pointer;}
+#d12 {width: 6%; height: 35px; border-right:0.1px solid #E8E8E8; float: left;}
+#d12 p{margin-top:10px;text-align: center;}
+#d12:hover {cursor:pointer;}
+#d13 {width: 9%; height: 35px; border-right:0.1px solid #E8E8E8; float: left;}
+#d13 p{margin-top:10px;text-align: center;}
+#d13:hover {cursor:pointer;}
+#d14 {width: 9%; height: 35px; border-right:0.1px solid #E8E8E8; float: left;}
+#d14 p{margin-top:10px;text-align: center;}
+#d14:hover {cursor:pointer;}
+#d15 {width: 15%; height: 35px; float:left; margin-left:560px; font-size: 14px;}
+#d15 p{margin-top:10px;text-align: center;}
+#d17 {width: 4%; height: 35px; float:left; font-size: 14px;}
+#d17 p{margin-top:10px;text-align: center;}
+#d17:hover {cursor:pointer;}
+#d17 a{color:#666;}
+#d16 {width:0%; height: 35px; float:left; margin-top: 10px; margin-left: 10px; }
+#d16:hover {cursor:pointer;}
+#d18 {width:0%; height: 35px; float:left; margin-top: 10px; margin-left: 40px; }
+#d18:hover {cursor:pointer;}
+span5 {float: left;}
+span2 {margin-left: 250px;}
+span6 {margin-left: 3px;}
+.d21 a{color:#000;}
+#d2 {
+	width: 100%;
+	height:75px;
+	float: left; 
+	background-color:white;
+	border-bottom: 0.1px solid #E8E8E8;
+}
+#d22 {width: 200px; height:40px;float: left;border: 0.1px solid #CCC; margin-left: 200px;}
+#d22:hover {width:250px; border: 1px solid black; transition: all 0.5s;}
+#d221 {width: 10%; height:100%; float:left; margin-top:12px; margin-left:10px;}
+#d222 {width: 89%; height:100%; float:left; margin-left:-220px;}
+#d222 input {width: 90%; height:38px; border: 0px solid white;}
+div#d2 li{height: 80px; list-style-type: none; float:left; padding-left: 175px; margin-top: 10px; font-size: 30px; font-weight: bold;}		
+input {float: left; height: 35px; margin-left: 230px; width: 190px;}
+span0 {margin-left: -35px;height: 40px; float: left; border-right: 1px solid black; margin-top:-16px;}	
+
+span {
+	margin-left: 35px; height: 40px; float: left; border-right: 1px solid black; margin-top:-16px; 
+	}	
+span1 {
+	float: right;
+	font-size: 15px;
+	margin-left: 850px;
+}
+#d3 {width: 100%;; height: 750px; float: left;}
+.d31 {width: 100%; height: 750px; float: left;}
+#d4 {width: 100%; height: 200px; float:left;}	
+span3 {font-size: 35px; font-weight: bold; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-left: 550px;}
+span4 {margin-left: 350px; font-size: 20px;}	
+span41 {margin-left: 500px; font-size: 20px;}
+#d5 {width: 100%; height: 700px; float:left;}
+#d51 {width: 60%; height: 100%; float: left;}
+#d511 {width:100%; height: 50%; float:left;}
+#d512 {width:100%; height: 50%; float:left;}
+#d52 {width: 40%; height: 100%; float:left;}
+#d6 {width: 100%; height: 300px; float:left; background-color: black;}
+#d2 li:hover {cursor:pointer;}	
+#d61 {width:70%; height: 100%; float: left; margin-left:175px;}
+#d611 {width: 17%; height:50%; float: left; list-style-type: none; margin-top:30px; }
+#d611 li{margin-top: 10px; margin-left: -40px;}
+span10 {color: #999; font-size: 13px;}
+span11 {font-weight: bold; color: #FFF; font-family:"Times New Roman", Times, serif; font-size:14px;}
+#d612 {width: 25%; height:50%; float:right;}
+#d613 {width:100%; height:10%; float: left; margin-top:60px; border-top: 1px solid #CCC; color: #999; font-size: 12px;}
+span12 {padding-top: 50px;}
+span13 {float:right;}
+span14 {margin-right: 10px;}
+span15 {border-radius: 100%; border: 1px solid black; background-color:gray; display:inline-block; box-sizing: border-box; width: 30px; height:30px;text-align:center; margin-left: 10px; margin-top:30px;float:right; padding-top:4px;}
+span16 {border-radius: 100%; border: 1px solid black; background-color:gray; display:inline-block; box-sizing: border-box; width: 30px; height:30px;text-align:center; margin-left: 10px; margin-top:30px;float:right; padding-top:1px;}
+#d7 {width:100%; height: 700px; float:left; }
+#d71 {width:100%; height: 100px; float:left;}
+#d71 p{margin-top:20px; margin-left: 20px; font-size:20px; font-weight:bold;}
+#d72 {width:100%; height: 600px; float:left;}
+#d721 {width: 22%; height: 600px; float:left; margin-left: 2%;}
+#d722 {width: 22%; height: 600px; float:left; margin-left: 3%;}
+#d723 {width: 22%; height: 600px; float:left; margin-left: 3%;}
+#d724 {width: 22%; height: 600px; float:left; margin-left: 3%;}
+body {margin: 0px; padding: 0px;}
+#d7211 {width:100%; height: 400px; float:left;}
+#d7212 {width:100%; height: 400px; float:left;border-top: 0.2px solid #CCC;}
+#d7221 {width:100%; height: 400px; float:left;}
+#d7222 {width:100%; height: 400px; float:left;border-top: 0.2px solid #CCC;}
+#d7231 {width:100%; height: 400px; float:left;}
+#d7232 {width:100%; height: 400px; float:left;border-top: 0.2px solid #CCC;}
+#d7241 {width:100%; height: 400px; float:left;}
+#d7242 {width:100%; height: 400px; float:left;border-top: 0.2px solid #CCC;}
+span20 {font-weight: bold;}
+span21 {color:#666;}
+#d721:hover {cursor:pointer;}
+#d721:hover img {transform:scale(1.5,1.5);transition: all 0.5s;}
+#d722:hover {cursor:pointer;}
+#d722:hover img {transform:scale(1.5,1.5);transition: all 0.5s;}
+#d723:hover {cursor:pointer;}
+#d723:hover img {transform:scale(1.5,1.5);transition: all 0.5s;}
+#d724:hover {cursor:pointer;}
+#d724:hover img {transform:scale(1.5,1.5);transition: all 0.5s;}
+#d8 {width:100%; height:200px; float:left; border-bottom: 1px solid #999;}
+span22 {font-size: 35px; font-weight: bold; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-left: 600px;}
+span23 {margin-left: 545px; font-size: 20px;}	
+span24 {margin-left: 570px; font-size: 20px;}
+</style>
+</head>
+
+<body onLoad="khoiTao()">
+<div id="x"></div>
+<div id="d">
+<div id = "d1">
+    <div id="d11"><a href="project_0.html" style="text-decoration: none;"><p>NikePlus</p></a></div>
+    <div id="d12"><p>Jordan</p></div>
+    <div id="d13"><p>HurleyX</p></div>
+    <div id="d14"><p>Converse</p></div>
+    <div id="d15"><p>Welcome To Nike+ My Friends<p></div>
+    <div id="d17"><p><a href="Projec_1.html"style="text-decoration: none;">Help</a></p></div>
+    <div id="d16"><a href="cart.html"><img src="hinh/giohang.png" width="14px" height="14px"/></a></div>
+    <div id="d18"><img src="hinh/vietnam.png" width="14px" height="14px"/></div>
+</div>
+<div id="d2">
+	<p><a href="Project.html"><span5><img src="hinh/nikeplus.png" width="100px" height="50px"></span5></a></p>
+	<ul class="d21">
+		<li><span2><a href="project_2.html" style="text-decoration: none;">Men</a></span2></li>
+		<li><span6><a href="project_3.html" style="text-decoration: none;">Women</a></span6></li>
+	  
+	</ul>
+	 <div id="d22">
+		<div id="d221"><img src="hinh/search.png" width="20" height="20"/></div>
+	   <div id="d222"><input type="text" placeholder="Search"/></div>
+	</div>
+</div>
+</div>
+	
+<div id="d3">
+	<div class="d31"><a href="NIKE SF AIR FORCE 1 HI.html">
+    	 <img src="hinh/30.jpg" width="1348px" height="750px" /></a>
+    </div>
+</div>
+<div id="d4">
+	<p><span3>NEW HEIGHTS</span3></p>
+    <p><span4>Higher than any Force before it, the military-inspired design of our SF AF-1 High<br /><span41>makes it unmistakable in all the right ways</span41></span4></p>
+</div>
+<div id="d5">
+	<div id="d51">
+    	<div id="d511"><a href="NIKE AIR FOAMPOSITE PRO - men.html"><img src = "hinh/0.jpg" width="100%" height="100%"></a></div>
+        <div id="d512"><a href="NIKE FREE RN COMMUTER 2017.html"><img src = "hinh/18.jpg" width="100%" height="100%"></a></div>
+    </div>
+    <div id="d52"><a href="NIKE KWAZI - men.html"><img src = "hinh/21.jpg" width="100%" height="100%"></a></div>
+</div>
+<div id="d8">
+	<p><span22>UNIQUE</span22></p>
+    <p><span23>Incorporate sneakers and clothes<br /><span24>Create your unique things</span24></span23></p>
+</div>
+<div id="d7">
+	<div id="d71"><p>OUR FASHIONEST STYLES</p></div>
+    <div id="d72">
+    	<div id="d721">
+        	<div id="d7211"><a href="NIKE SF AIR FORCE 1 HI.html"><img src="hinh/sf-air-force-1-hi-boot.jpg" width="297px" height="350px"/></a></div>
+            <div id="d7212"><span20>Nike SF Air Force 1 Hi</span20><br /><span21>Men's Boot</span21></div>
+        </div>
+        <div id="d722">
+        	<div id="d7221"><a href="NIKE KOMYUTER SE - men.html"><img src="hinh/komyuter-se-shoe.jpg" width="297px" height="350px"/></a></div>
+            <div id="d7222"><span20>Nike Komyuter SE</span20><br /><span21>Men's Shoe</span21></div>
+        </div>
+        <div id="d723">
+        	<div id="d7231"><a href="NIKE FREE RN COMMUTER 2017.html"><img src="hinh/free-rn-commuter-2017-running-shoe.jpg-" width="297px" height="350px"/></a></div>
+            <div id="d7232"><span20>Nike Free RN Commuter 2017</span20><br /><span21>Women's Shoe</span21></div>
+        </div>
+        <div id="d724">
+        	<div id="d7241"><a href="NIKE FLEX 2017 RN.html"><img src="img/NIKE FLEX 2017 RN/black/1.jpg" width="297px" height="350px"/></a></div>
+            <div id="d7242"><span20>Nike Flex 2017 RN</span20><br /><span21>Women's Shoe</span21></div>
+        </div>
+    </div>
+</div>
+<div id="d6">
+	<div id="d61">
+    	<ul id="d611">
+        	<span11><li>GILF CARDS</li>
+            <li>STUDENT DISCOUNT</li>
+            <li>MILITARY DISCOUNT</li>
+            <li>FIND A STORE</li>
+            <li>SIGN UP FOR EMAIL</li>
+            <li>BECOME A MEMBER</li>
+            <li>SITE FEEDBACK</li></span11>
+        </ul>
+        <ul id="d611">
+        	<li><span11>GET HELP</span11></li>
+            <span10><li>Order Status</li>
+            <li>Shipping and Delivery</li>
+            <li>Returns</li>
+            <li>Payment Options</li>
+            <li>Contact Us</li></span10>
+        </ul>
+        <ul id="d611">
+        	<li><span11>ABOUT NIKE</span11></li>
+            <span10><li>New</li>
+            <li>Careers</li>
+            <li>Converse Culture & Careers</li>
+            <li>Investors</li>
+            <li>Sustainable Innovation</li>
+            <li>CA Supply Chains Act</li></span10>
+        </ul>
+         <div id="d612">  
+           <span15> <a href="http://www.instagram.com/nike/"><img src="hinh/Instagram.png" width="20px" height="20px"></a></span15>
+           <span15><a href="http://www.youtube.com/user/nike"><img src="hinh/youtube.png" width="20px" height="20px"></a></span15>
+           <span16><a href="http://www.facebook.com/nike"><img src="hinh/facebook.png" width="30px" height="30px"></a></span16>
+           <span15><a href="http://twitter.com/Nike"><img src="hinh/twitter.png" width="20px" height="20px"></a></span15>
+         </div>
+         <div id="d613">
+         	<span12><a>Viet Nam</a>
+            <a>&#169 2017 Nike, Inc. All Rights Reverved</a>
+            <span13><a><span14>Guides</span14></a>
+            <a><span14>Terms of Use</span14></a>
+            <a>Nike Privacy Policy</a></span13></span12>                        
+         </div>
+    </div>
+   
+</div>
+</body>
+</body>
+</html>

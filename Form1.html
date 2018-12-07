@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--
+<html>
+    <head>
+        <title>Let's Start</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+-->
+<html>
+    <head>
+        <title>Let's Start</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+   <script>
+		function check() {
+		var count = 0;
+		var s1 = document.getElementById("pass");
+		s = s1.value;
+		var s2 = document.getElementById("email");
+		x = s2.value;
+		var mau1 = /[a-z]/;
+		var mau2 = /[A-Z]/;
+		var mau3 = /[0-9]/;
+		var mau4 = /\W/;
+		var mau = /^\w+[@][a-zA-Z]+[.][a-zA-Z]+([.][a-zA-Z]+)?$/;
+		if (mau.test(x) == false) {
+			alert("Invalid email");
+			count++;	
+		}
+		if (mau1.test(s)==false || mau2.test(s)==false || mau3.test(s)==false || mau4.test(s)==false || s.length < 6) {
+			alert("Invalid password");
+			count++;	
+		}
+			if (count == 0)
+				alert("You have successfully logged in. Thank you for your purchase!");
+	}
+		</script>
+    </head>
+    <body>
+        <section id="form_1">
+            <div class="layer_black"></div>
+            <div id="form_format">
+                <div id="form_body">
+                    <div id="x_button" onclick="hide_form()">X</div>
+                    <div id="logo_nike"><img src="./img/1.jpg"></div>
+                    <div id="name_form">
+                        <p>YOUR ACCOUNT FOR<br>EVERYTHING NIKE</p>
+                    </div>
+                    <input id="email" class="input_text" type="text" placeholder="Email">
+                    <input id="pass" class="input_text" type="password" placeholder="Password">
+                    <div id="checkbox_div">
+                        <input type="checkbox"><p>Keep me logged in</p><p class="class_float_right">Forgotten your password?</p>
+                    </div>
+                    
+                    <div id="term_div">
+                        <p>By logging in, you agree to Nike's</p><p class="class_underline">Privacy Policy</p><p> and </p><p class="class_underline">Terms of Use</p>
+                    </div>
+                    <div id="button_div">
+                        <div id="login_button" onClick="check()">
+                            <p>LOG IN</p>
+                        </div>
+                        <div id="fb_button" onClick="goFb()">
+                            <i class="fa fa-facebook" aria-hidden="true"></i><p>LOGIN WITH FACEBOOK</p>
+                        </div>
+                    </div>
+                    <div id="form_footer">
+                        <p class="class_opacity">Not a member?</p><p class="class_underline"><a href="Form2.html">Join now</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function show_form() {
+                document.getElementById("form_1").setAttribute("style","opacity: 1;");
+            }
+            function hide_form() {
+                document.getElementById("form_1").setAttribute("style","opacity: 0;");
+            }
+			function goFb() {
+				window.open("https://www.facebook.com");
+			}
+        </script>
+    </body>
+</html>

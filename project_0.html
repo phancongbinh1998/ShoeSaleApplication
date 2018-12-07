@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+.ngoai {width:1350px; height: 700px; overflow:hidden;}
+.trong {width:5400px; height: 700px; animation-name:run; animation-duration:15s;
+				animation-iteration-count:infinite;position:relative;z-index:0;}
+.trong img {width:1350px; height:700px; float:left;}
+@keyframes run{ 0%{left:0px;}
+				33%{left:-1350px;}
+				66%{left:-2700px;}
+				100%{left:-4050px;}					
+				}
+				
+input {z-index:1; width: 100px; height: 50px; position:relative;opacity:1; top: -600px; left: 975px;  animation-name:run1; animation-duration:15s;animation-iteration-count:infinite; background-image:url(hinh/27.jpg);font-weight:bold; border: 0.5px solid gray;}	
+@keyframes run1{ 0%{background-image: url(hinh/27.jpg);}
+				33%{background-image: url(hinh/28.jpg);}
+				66%{background-image: url(hinh/29.jpg);}
+				100%{background-image: url(hinh/27.jpg);}					
+				}				
+input:hover {cursor:pointer;}
+p {z-index:1; width: 800px; height: 50px; position:relative;opacity:1; color:black; top: -700px; left: 750px; font-family: fantasy; font-size: 50px;}	
+span {margin-left: 90px;}	
+span1 {margin-left: 235px;}	
+body {margin: 0px; padding: 0px;}
+</style>
+</head>
+
+<body>
+<div class="ngoai">
+			<div class="trong">
+				<img src="hinh/24.jpg" />
+				<img src="hinh/25.jpg" />
+				<img src="hinh/26.jpg" />
+				<img src="hinh/24.jpg" />	
+			
+			</div>	
+            <p>WE DON'T DESIGN SNEAKERS <br /><span>WE DESIGN DREAMS</span><br /><span1>******</span1></p>
+           	<a href="project.html"><input type="button" value="HOME" /></a>
+</div>
+
+</body>
+</html>
